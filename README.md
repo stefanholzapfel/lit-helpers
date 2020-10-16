@@ -19,6 +19,7 @@ To get it to work just use LitElementEnhanced instead of LitElement.
 You can then use all of LitElement's features plus:
 
 <h3>Add logic to callbacks from everywhere</h3>
+
 ```
 myLitElementEnhanced.connectedCallbackAddLogic(() => 
     {
