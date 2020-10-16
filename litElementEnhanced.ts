@@ -7,7 +7,7 @@ export class LitElementEnhanced extends LitElement {
     }
 
     private connectedCallbackExtensions: Function[] = [];
-    connectedCallbackAddLogic(callback: () => {}): void {
+    connectedCallbackAddLogic(callback: () => void): void {
         this.connectedCallbackExtensions.push(callback);
     }
 
@@ -17,7 +17,7 @@ export class LitElementEnhanced extends LitElement {
     }
 
     private disconnectedCallbackExtensions: Function[] = [];
-    disconnectedCallbackAddLogic(callback: () => {}): void {
+    disconnectedCallbackAddLogic(callback: () => void): void {
         this.disconnectedCallbackExtensions.push(callback);
     }
 
