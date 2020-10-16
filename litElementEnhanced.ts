@@ -1,0 +1,28 @@
+import {LitElement} from 'lit-element';
+
+export class LitElementEnhanced extends LitElement {
+
+    constructor() {
+        super();
+    }
+
+    private connectedCallbackExtensions: Function[] = [];
+    connectedCallbackAddLogic(callback: () => {}): void {
+        this.connectedCallbackExtensions.push(callback);
+    }
+
+    connectedCallback(): void {
+        super.connectedCallback();
+        this.connectedCallbackExtensions.forEach(callback => callback());
+    }
+
+    private disconnectedCallbackExtensions: Function[] = [];
+    disconnectedCallbackAddLogic(callback: () => {}): void {
+        this.disconnectedCallbackExtensions.push(callback);
+    }
+
+    disconnectedCallback(): void {
+        super.disconnectedCallback();
+        this.disconnectedCallbackExtensions.forEach(callback => callback());
+    }
+}

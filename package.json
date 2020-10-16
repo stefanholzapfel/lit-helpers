@@ -1,0 +1,16 @@
+{
+  "name": "lit-helpers",
+  "version": "1.0.0",
+  "description": "A utility extension for LitElement",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stefanholzapfel/lit-helpers.git"
+  },
+  "browser": "index.ts",
+  "scripts": {},
+  "author": "Stefan Holzapfel",
+  "license": "MIT",
+  "dependencies": {
+    "lit-element": "^2.4.0"
+  }
+}
