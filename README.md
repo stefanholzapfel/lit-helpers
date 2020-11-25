@@ -1,4 +1,4 @@
-# lit-state
+# lit-helpers
 A utility extension for LitElement
 
 This package contains no Javascript. You have to compile to JS first. If you use webpack's ts-loader you can just enable  "allowTsInNodeModules":
@@ -33,3 +33,20 @@ myLitElementEnhanced.disconnectedCallbackAddLogic(() =>
     }
 );
 ```
+
+<h3>Built-in directives</h3>
+
+<h4>ifOrEmpty</h4>
+```ifOrEmpty(condition, value)```
+
+Location: any
+
+Renders the value if condition is true, renders empty string otherwise.
+
+Where:
+
+```condition``` statement that returns a boolean
+
+```value``` a value you want to render when ```condition``` is true
+
+Use instead of ternary operator when you have no else branch.
