@@ -1,4 +1,4 @@
 export * from './litElementEnhanced';
 
 // Directives
-export * from './directives/ifOrEmpty.directive';
+export * from './directives/when.directive';

@@ -36,8 +36,8 @@ myLitElementEnhanced.disconnectedCallbackAddLogic(() =>
 
 <h3>Built-in directives</h3>
 
-<h4>ifOrEmpty</h4>
-```ifOrEmpty(condition, value)```
+<h4>when</h4>
+```when(condition, value)```
 
 Location: any
 
