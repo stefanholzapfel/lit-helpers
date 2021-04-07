@@ -1,7 +1,6 @@
 import {LitElement} from 'lit-element';
 
 export class LitElementEnhanced extends LitElement {
-
     constructor() {
         super();
     }

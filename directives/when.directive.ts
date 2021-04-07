@@ -1,5 +1,12 @@
-import { directive } from 'lit-html';
+import {directive, Directive} from 'lit-html/directive.js';
 
-export const when = directive((condition: Boolean, value: any) => (part) => {
-    part.setValue(condition ? value : '');
-});
+export const whenDirective = directive(
+    class extends Directive {
+        update(part, [condition, value]) {
+            return this.render(condition, value);
+        }
+        render(condition, value) {
+            return condition ? value : '';
+        }
+    }
+);
