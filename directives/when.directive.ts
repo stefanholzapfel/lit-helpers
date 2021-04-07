@@ -1,6 +1,6 @@
 import {directive, Directive} from 'lit-html/directive.js';
 
-export const whenDirective = directive(
+export const when = directive(
     class extends Directive {
         update(part, [condition, value]) {
             return this.render(condition, value);
