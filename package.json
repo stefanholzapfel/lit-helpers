@@ -11,6 +11,6 @@
   "author": "Stefan Holzapfel",
   "license": "MIT",
   "dependencies": {
-    "lit-element": "^3.0.0-pre.4"
+    "lit": "^2.0.0-rc.1"
   }
 }
