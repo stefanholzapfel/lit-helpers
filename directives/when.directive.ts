@@ -1,4 +1,4 @@
-import {directive, Directive} from 'lit-html/directive.js';
+import {Directive, directive} from 'lit/directive.js';
 
 export const when = directive(
     class extends Directive {
