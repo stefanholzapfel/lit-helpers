@@ -1,52 +1,41 @@
 # lit-helpers
-A utility extension for LitElement
+A utility extension for Lit 2
 
-This package contains no Javascript. You have to compile to JS first. If you use webpack's ts-loader you can just enable  "allowTsInNodeModules":
+<h1>Installation</h1>
 
 ```
-{
-    test: /\.ts$/,
-    use: {
-        loader: 'ts-loader',
-        options: {
-            allowTsInNodeModules: true
-        }
+npm install @stefanholzapfel/lit-helpers
+```
+
+This package includes some helper controllers and directives.
+
+<h2>Reactive controllers</h2>
+
+<h3>DomDetachmentController</h3>
+
+Programmatically add callbacks to execute when LitElement is detached from DOM.
+```
+@customElement('my-element')
+export class MyElement extends LitElement{
+    // Create the controller and store it
+    private domDetachmentController = new DomDetachmentController(this);
+    
+    anyElementFunction() {
+        this.domDetachmentController.addLogic(() => {
+            // do something, e.g. clean up dynamically created subscriptions
+        })
+    }
 }
 ```
 
-To get it to work just use LitElementEnhanced instead of LitElement.  
+<h2>Directives</h2>
 
-You can then use all of LitElement's features plus:
+<h3>when</h3>
 
-<h3>Add logic to callbacks from everywhere</h3>
-
-```
-myLitElementEnhanced.connectedCallbackAddLogic(() => 
-    {
-        console.log('Execute this during element's connected callback!');
-    }
-);
-
-myLitElementEnhanced.disconnectedCallbackAddLogic(() => 
-    {
-        console.log('Execute this during element's disconnected callback!');
-    }
-);
-```
-
-<h3>Built-in directives</h3>
-
-<h4>when</h4>
-```when(condition, value)```
-
-Location: any
+Usable location: any
 
 Renders the value if condition is true, renders empty string otherwise.
 
-Where:
-
-```condition``` statement that returns a boolean
-
-```value``` a value you want to render when ```condition``` is true
+Signature: ```when(condition: boolean, value: unknown)```
 
 Use instead of ternary operator when you have no else branch.

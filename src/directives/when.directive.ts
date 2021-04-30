@@ -5,7 +5,7 @@ export const when = directive(
         update(part, [condition, value]) {
             return this.render(condition, value);
         }
-        render(condition, value) {
+        render(condition: boolean, value) {
             return condition ? value : '';
         }
     }

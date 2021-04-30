@@ -1,16 +1,32 @@
 {
-  "name": "lit-helpers",
+  "name": "@stefanholzapfel/lit-helpers",
   "version": "2.0.0",
-  "description": "A utility extension for LitElement",
+  "description": "A utility extension for Lit 2",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/stefanholzapfel/lit-helpers.git"
   },
-  "browser": "index.ts",
-  "scripts": {},
+  "scripts": {
+    "build": "tsc --build --clean && tsc",
+    "publish_npm": "tsc --build --clean && tsc && yarn publish"
+  },
   "author": "Stefan Holzapfel",
   "license": "MIT",
   "dependencies": {
     "lit": "^2.0.0-rc.1"
-  }
+  },
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  },
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "main:": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist",
+    "src"
+  ]
 }
