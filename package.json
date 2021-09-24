@@ -1,6 +1,6 @@
 {
   "name": "@stefanholzapfel/lit-helpers",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "A utility extension for Lit 2",
   "publishConfig": {
     "access": "public"
@@ -16,10 +16,10 @@
   "author": "Stefan Holzapfel",
   "license": "MIT",
   "dependencies": {
-    "lit": "^2.0.0-rc.1"
+    "lit": "^2.0.0"
   },
   "devDependencies": {
-    "typescript": "^4.2.4"
+    "typescript": "^4.4.3"
   },
   "type": "module",
   "types": "dist/index.d.ts",
