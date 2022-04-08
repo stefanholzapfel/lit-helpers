@@ -30,7 +30,8 @@ export class MyElement extends LitElement{
 
 <h2>Directives</h2>
 
-<h3>when</h3>
+
+<h3>when (Deprecated - use Lit's when directive)</h3>
 
 Usable location: any
 
