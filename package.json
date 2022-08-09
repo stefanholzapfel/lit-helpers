@@ -1,6 +1,6 @@
 {
   "name": "@stefanholzapfel/lit-helpers",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "A utility library for Lit 2",
   "publishConfig": {
     "access": "public"

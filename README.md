@@ -1,5 +1,5 @@
 # lit-helpers
-A utility extension for Lit 2
+A utility library for Lit 2
 
 <h1>Installation</h1>
 
@@ -29,14 +29,3 @@ export class MyElement extends LitElement{
 ```
 
 <h2>Directives</h2>
-
-
-<h3>when (Deprecated - use Lit's when directive)</h3>
-
-Usable location: any
-
-Renders the value if condition is true, renders empty string otherwise.
-
-Signature: ```when(condition: boolean, value: unknown)```
-
-Use instead of ternary operator when you have no else branch.
