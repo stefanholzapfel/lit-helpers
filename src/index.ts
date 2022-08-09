@@ -1,4 +1,4 @@
 export * from './controllers/domDetachment.controller';
 
 // Directives
-export * from './directives/when.directive';
+//export * from './directives/when.directive';
