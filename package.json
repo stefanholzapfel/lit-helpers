@@ -1,6 +1,6 @@
 {
   "name": "@stefanholzapfel/lit-helpers",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "A utility library for Lit 2",
   "publishConfig": {
     "access": "public"
@@ -11,7 +11,7 @@
   },
   "scripts": {
     "build": "rm -rf ./dist/ && tsc",
-    "publish_npm": "rm -rf ./dist/ && yarn publish"
+    "publish_npm": "rm -rf ./dist/ && tsc && yarn publish"
   },
   "author": "Stefan Holzapfel",
   "license": "MIT",
