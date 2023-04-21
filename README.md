@@ -1,5 +1,5 @@
 # lit-helpers
-A utility library for Lit 2
+A utility library for Lit
 
 <h1>Installation</h1>
 
